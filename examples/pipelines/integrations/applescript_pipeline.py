@@ -33,8 +33,8 @@ class Pipeline:
         # This is where you can add your custom pipelines like RAG.
         print(f"pipe:{__name__}")
 
-        OLLAMA_BASE_URL = "http://localhost:11434"
-        MODEL = "llama3"
+        OLLAMA_BASE_URL = "http://192.168.3.211:11434"
+        MODEL = "qwen:32b"
 
         if body.get("title", False):
             print("Title Generation")
